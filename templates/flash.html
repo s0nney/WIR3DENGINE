@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    {{.headerTags}}
+    <title>{{.title}}</title>
+</head>
+<main>
+    <div class="welcome">
+        <h2> {{.Header}} </h2>
+        <img style="margin: 10px; height: 300px; width: auto;" src="/static/greeter3.gif" alt="mobile frogs gtfo">
+        <br>
+        {{.connect}} <div style="position: absolute; display: inline;" id="loadingText"></div>
+        {{.foot}}
+        <script>
+            const loadingTextElement = document.getElementById('loadingText');
+            let dotsCount = 0;
+
+            function updateLoadingText() {
+                loadingTextElement.innerText = '.'.repeat(dotsCount);
+                dotsCount = (dotsCount + 1) % 4;
+            }
+
+            setInterval(updateLoadingText, 500);
+        </script>
+
+    </div>
+</main>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{.headerTags}}
+    <title>{{.title}}</title>
+</head>
+
+<body>
+    <main>
+
+    <!-- About: /about -->
+    <!-- API: /engine -->
+    <!-- Contact/Donate: /contact -->
+
+
+        <div class="forms">
+            <form action="/in_text" method="post" id="text">
+                <input type="hidden" name="_csrf" value="{{.CSRFToken}}">
+                <input name="name" type="text" style="width: 15em;" placeholder="Anonymous" maxlength="25">
+                <input name="in_text" type="text" style="width: 35em;" placeholder="Echo into the wired..."
+                    maxlength="512" {{.requiredInput}}>
+                <button>post_message</button>
+            </form>
+            <form action="/in_image" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="_csrf" value="{{.CSRFToken}}">
+                <input name="in_image" type="file" accept="image/png, image/jpg, image/jpeg, image/webp"
+                    {{.requiredInput}}>
+                <button>post_image</button>
+            </form>
+            <a href="/gallery" alt="gallery"><button>gallery</button></a>
+        </div>
+        {{.adminPost}}
+        <div class="posts">
+            {{.posts}}
+        </div>
+        <div class="images">
+            {{.images}}
+        </div>
+        {{.foot}}
+    </main>
+</body>
+
+</html>

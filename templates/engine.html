@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{.headerTags}}
+    <title>{{.title}}</title>
+</head>
+
+<body>
+    <main>
+        <h1></h1>
+        <div class="welcome">
+            <a href="/"><img src="/static/logo8.jpg" alt="laincore" style="max-width: 40%;height: auto;"></a>
+            <h2>API:</h2>
+            <p>
+                /posts => grabs the 20 most recent posts in JSON
+            </p>
+            <p>
+                /posts/n => grabs the (n &lt; 100) most recent posts in JSON
+            </p>
+        </div>
+        {{.foot}}
+    </main>
+</body>
+
+</html>

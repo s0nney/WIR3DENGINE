@@ -1,0 +1,34 @@
+@font-face {
+  font-family: 'loveletter';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/loveletter.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'spacedock';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/spacedock.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'neuropol';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/neuropol.otf') format('truetype');
+}
+
+@font-face {
+  font-family: 'pixelpoiiz';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/pixelpoiiz.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'messypup';
+  font-style: normal;
+  font-weight: normal;
+  src: url('fonts/messypup.ttf') format('truetype');
+}

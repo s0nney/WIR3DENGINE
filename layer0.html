@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    body {
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+        font-size: large;
+        background-color: #2a3957;
+        text-align: center;
+        max-width: 1300px;
+        margin-right: auto;
+        margin-left: auto;
+        padding: 15px;
+    }
+
+    h1 {
+        height: 40%;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layer 0</title>
+</head>
+
+<body>
+    <main>
+        <p>All systems are currently <span style="color:red">down</span>.</p>
+        <img src="logo3.jpg" style="max-width: 100%;height: auto;" alt="laincore">
+
+        <br><br>
+        <div id="loadingText"></div>
+
+        <script>
+            const loadingTextElement = document.getElementById('loadingText');
+            let dotsCount = 0;
+
+            function updateLoadingText() {
+                loadingTextElement.innerText = '.'.repeat(dotsCount);
+                dotsCount = (dotsCount + 1) % 4;
+            }
+
+            setInterval(updateLoadingText, 500);
+        </script>
+    </main>
+</body>
+
+</html>

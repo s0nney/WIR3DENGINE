@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    {{.headerTags}}
+    <title>{{.title}}</title>
+</head>
+<!--
+<video autoplay muted loop id="tachibanalabs">
+    <source src="/static/copland2ultralite.webm" type="video/webm">
+</video>
+-->
+
+<body>
+    <main>
+        <div class="forms">
+            <form action="/in_text" method="post" id="text">
+                <input type="hidden" name="_csrf" value="{{.CSRFToken}}">
+                <input name="name" type="text" style="width: 15em;" placeholder="Anonymous" maxlength="25">
+                <input name="in_text" type="text" style="width: 35em;" placeholder="Echo into the wired..."
+                    maxlength="512" {{.requiredInput}}>
+                <button>post_message</button>
+            </form>
+
+            <form action="/in_image" method="post" enctype="multipart/form-data">
+                <input type="hidden" name="_csrf" value="{{.CSRFToken}}">
+                <input name="in_image" type="file" accept="image/png, image/jpg, image/jpeg, image/webp"
+                    {{.requiredInput}}>
+                <button>post_image</button>
+            </form>
+            <a href="/gallery" alt="gallery"><button>gallery</button></a> 
+        </div>
+        <div class="gallery">
+            <h1><span style="color:#0ff"> {{.page}} / {{.total}} </span></h1>
+            {{.images}}
+            <br><a href="/gallery?page={{.previous}}"><button>Previous</button></a>
+            <a href="/gallery?page={{.next}}"><button>Next</button></a> <a href="/index"
+                                                                           alt="/index"><button>Home</button></a>
+        </div>
+        {{.foot}}
+    </main>
+</body>
+
+</html>

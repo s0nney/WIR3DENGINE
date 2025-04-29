@@ -1,0 +1,5 @@
+{ 
+    "name_field_size": 128,
+    "message_field_size": 512,
+    "image_display_count": 5
+}

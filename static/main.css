@@ -1,0 +1,131 @@
+body {
+
+    background-color: #2a3957;
+    color: white;
+    margin-right: auto;
+    font-family: sans-serif;
+    font-size: 0.7em;
+    padding: 5px;
+
+}
+
+.forms form {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 4px;
+}
+
+.forms button,
+.forms input, button {
+    background: #000000;
+    color: #00f3ff;
+    border: 1px solid #066cc6;
+    font-size: 0.8rem;
+    padding: 2px;
+    vertical-align: middle;
+}
+
+.adminpost {
+    color: red;
+}
+
+.posts {
+    width: 900px;
+    word-wrap: break-word;
+}
+
+.post {
+    position: relative;
+    text-shadow: 2px 2px #000000;
+    margin: 5px;
+}
+
+.img {
+
+    user-select: none;
+    pointer-events: none;
+}
+
+/* Gallery. */
+.gallery {
+    padding: 5px;
+    position: absolute;
+    width: 1500px;
+}
+
+.pic {
+
+    margin: 10px;
+    border: 1px solid #0ff;
+    display: inline;
+
+}
+
+.welcome {
+
+    text-align: center;
+    font-size: large;
+    color: white;
+
+}
+
+.err {
+
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    font-size: large;
+    color: white;
+
+}
+
+.header1 {
+    text-align: center;
+    display: block;
+    font-size: 3em;
+    font-family: monospace;
+    opacity: .66;
+    text-shadow: 0 0 10px #C8C8C8;
+    padding-bottom: 15px;
+}
+
+
+.glory {
+    color: white;
+    text-align: center;
+    -webkit-animation: glory 1s ease-in-out infinite alternate;
+    -moz-animation: glory 1s ease-in-out infinite alternate;
+    animation: glory 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glory {
+    from {
+        text-shadow: 0 0 0.5em #FFFFFF, 0 0 0.6em #FFFFFF;
+    }
+
+    to {
+        text-shadow: 0 0 1.1em #0059ff, 0 0 1.2em #0059ff;
+    }
+}
+
+footer {
+    float: right;
+    position: -webkit-sticky;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    z-index: 255;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:visited {
+    color: white;
+}
+
+a:hover {
+    text-decoration: underline;
+}
