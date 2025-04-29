@@ -4,7 +4,9 @@ WIR3DENGINE is a simple messageboard engine inspired by the defunct [mebious.co.
 * No admin panel. ✅
 * Everything is done manually by hacking away at the sourcecode and sending raw PSQL queries. ✅
 * Looks terrible on mobile. ✅
-* Only text and images are allowed. No audio files. ✅ 
+* Only text and images are allowed. No audio files. ✅
+  
+![Screenshot_20250428_194106](https://github.com/user-attachments/assets/b58611d3-4437-47af-a5f1-970ea94eb8d7)
 
 ## Simple setup:
 ```
